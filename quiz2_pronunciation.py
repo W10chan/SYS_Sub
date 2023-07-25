@@ -47,7 +47,7 @@ class Application(tk.Frame):
         self.text2.place(x=50, y=90)
         self.text2.focus_set()
 
-        self.speech_config = speechsdk.SpeechConfig(subscription="dc618b934d984348b8e4813047d851d4", region="japaneast")
+        self.speech_config = speechsdk.SpeechConfig(subscription="YOUR_API_KEY", region="YOUR_API_KEY")
         self.speech_recognizer = speechsdk.SpeechRecognizer(speech_config=self.speech_config)
 
         self.speech_recognizer.recognized.connect(self.process_speech)
